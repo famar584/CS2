@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html long="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APPTEV</title>
+    <link rel="stylesheet" href="./sprint.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <h1>Novo APPTEV!</h1>
+        <span>Feito por Los Pollos Hermanos</span>
+        <a href="#saiba_mais" class="botao btn">Saiba Mais</a>
+    </header>
+
+    <section id="saiba_mais">
+        <img class="avatar large-only" src="./avatar.jpg" alt="avatar">
+        <div id="apresentacao">
+            <h2>Novo aplicativo sobre Tromboembolismo Venoso</h2>
+            <p>Agora o histórico pode ser salvo e compartilhado com os pacientes!</p>
+        </div>
+    </section>
+    <section id="formulario">
+        <form action="">
+            <h3>Isso irá te ajudar?</h3>
+            <label for="idade">Qual é sua idade?</label>
+            <input type="number" id="idade" min="1" max="130" value="1">
+
+            <label for="coracao">Você já teve problemas no coração?</label>
+            <input type="checkbox" id="coracao">
+
+            <label for="colesterol">Qual seu nível de colesterol</label>
+            <div>
+                <input type="radio" id="baixo" name="colesterol">
+                <label for="baixo">Baixo.</label>
+
+                <input type="radio" id="normal" name="colesterol">
+                <label for="normal">Normal.</label>
+
+                <input type="radio" id="alto" name="colesterol">
+                <label for="alto">Alto.</label>
+            </div>
+            <a href="#resultado" id="resultado" class="botao_form">Resultado</a>
+            <output id="output_resultado"></output>
+        </form>
+    </section>
+    
+<script src="./sprint.js"></script>
+
+</body>
+
+
+</html>
